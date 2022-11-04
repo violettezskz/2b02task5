@@ -16,11 +16,11 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     x = 0
     y = 0
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 3; index++) {
         for (let index = 0; index < 5; index++) {
             led.plot(x, y)
-            basic.pause(100)
             x += 1
+            basic.pause(100)
         }
         y += 1
         for (let index = 0; index < 5; index++) {
@@ -28,5 +28,6 @@ input.onButtonPressed(Button.B, function () {
             led.plot(x, y)
             basic.pause(100)
         }
+        y += 1
     }
 })
